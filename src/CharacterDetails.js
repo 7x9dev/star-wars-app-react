@@ -9,18 +9,28 @@ export default function CharacterDetails({ person, isOpen, onClose }) {
    };
 
    const [vehicles, setVehicles] = useState([]);
+   const [loading, setLoading] = useState(true);
+   const [selectedVehicle, setSelectedVehicle] = useState(null);
 
    useEffect(() => {
       const fetchVehicleDetails = async () => {
+         setLoading(true);
+
          const vehiclePromises = person.vehicles.map((vehicleUrl) =>
             fetch(vehicleUrl).then((response) => response.json())
          );
+
          const vehicleDetails = await Promise.all(vehiclePromises);
          setVehicles(vehicleDetails);
+         setLoading(false);
       };
 
       fetchVehicleDetails();
    }, [person.vehicles]);
+
+   const handleVehicleClick = (vehicle) => {
+      setSelectedVehicle(vehicle);
+   };
 
    return (
       <Modal
@@ -48,18 +58,31 @@ export default function CharacterDetails({ person, isOpen, onClose }) {
                />
                <h3>{person.name}</h3>
                <p>Birth Year: {person.birth_year}</p>
+               <p>Mass: {person.mass}</p>
                <p>Height: {person.height}</p>
                <p>Gender: {person.gender}</p>
-               <p>Birth Year: {person.birth_year}</p>
             </div>
+            <div className="vertical-divider"></div>
             <div className="vehicles">
                <h4>Vehicles</h4>
-               {vehicles.length > 0 ? (
+               {loading ? (
+                  <p>Loading vehicle details...</p>
+               ) : vehicles.length > 0 ? (
                   vehicles.map((vehicle, index) => (
                      <div key={index}>
-                        <button className="vehicle-button">
+                        <button
+                           className="vehicle-button"
+                           onClick={() => handleVehicleClick(vehicle)}
+                        >
                            {vehicle.name}
                         </button>
+                        {selectedVehicle === vehicle && (
+                           <div className="vehicle-details">
+                              <p>Model: {vehicle.model}</p>
+                              <p>Manufacturer: {vehicle.manufacturer}</p>
+                              <p>Class: {vehicle.vehicle_class}</p>
+                           </div>
+                        )}
                      </div>
                   ))
                ) : (
