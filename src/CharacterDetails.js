@@ -29,7 +29,11 @@ export default function CharacterDetails({ person, isOpen, onClose }) {
    }, [person.vehicles]);
 
    const handleVehicleClick = (vehicle) => {
-      setSelectedVehicle(vehicle);
+      if (selectedVehicle && selectedVehicle.name === vehicle.name) {
+         setSelectedVehicle(null);
+      } else {
+         setSelectedVehicle(vehicle);
+      }
    };
 
    return (
@@ -38,40 +42,32 @@ export default function CharacterDetails({ person, isOpen, onClose }) {
          onRequestClose={onClose}
          contentLabel="Character Details"
       >
-         <button
-            onClick={onClose}
-            style={{
-               position: "absolute",
-               top: "10px",
-               right: "10px",
-            }}
-         >
-            Close
+         <button className="close-button" onClick={onClose}>
+            <img src="/img/x-close.svg" alt="Close" />
          </button>
          <div className="modal-content">
-            <div className="character-info">
+            <div className="info-container">
                <img
                   className="character-img"
                   src={getCharacterImageUrl(person.name)}
                   alt={person.name}
-                  style={{ width: "300px" }}
                />
-               <h3>{person.name}</h3>
+               <h3 className="character-name-modal">{person.name}</h3>
                <p>Birth Year: {person.birth_year}</p>
                <p>Mass: {person.mass}</p>
                <p>Height: {person.height}</p>
                <p>Gender: {person.gender}</p>
             </div>
             <div className="vertical-divider"></div>
-            <div className="vehicles">
+            <div className="vehicles-container">
                <h4>Vehicles</h4>
                {loading ? (
-                  <p>Loading vehicle details...</p>
+                  <p>Loading vehicles...</p>
                ) : vehicles.length > 0 ? (
                   vehicles.map((vehicle, index) => (
                      <div key={index}>
                         <button
-                           className="vehicle-button"
+                           className="vehicle-button button-outline"
                            onClick={() => handleVehicleClick(vehicle)}
                         >
                            {vehicle.name}
