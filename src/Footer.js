@@ -19,7 +19,7 @@ export default function Footer() {
                target="_blank"
                rel="noreferrer"
             >
-               Valerie&nbsp;D.
+               Valeriia&nbsp;D.
             </a>
          </p>
       </footer>
