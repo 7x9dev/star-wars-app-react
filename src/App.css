@@ -60,6 +60,7 @@ button::-moz-focus-inner {
 a,
 a:visited,
 a:hover {
+   color: #ffe81f;
    text-decoration: none;
 }
 ul,

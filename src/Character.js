@@ -38,6 +38,7 @@ export default function Character() {
       <div className="character-wrapper _container">
          {loading && (
             <BeatLoader
+               className="spinner-container"
                color="#fff"
                loading={loading}
                speedMultiplier={0.5}
