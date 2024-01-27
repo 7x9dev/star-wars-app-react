@@ -68,3 +68,33 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# Credits
+
+## API
+
+[Swapi API](https://swapi.dev/api/)
+
+## AI image generation
+
+[Hotpot AI Art Generator](https://hotpot.ai/art-generator/)
+
+## AI text generation
+
+[ChatGPT](https://chat.openai.com/)
+
+## Hooks
+
+1. [React Modal](https://react-popup.elazizi.com/react-modal/)
+2. [React Tooltip](https://react-tooltip.com/)
+
+## Animation
+
+[GSAP](https://gsap.com/)
+
+## Clipart
+
+1. [Official Star Wars website](https://www.starwars.com/)
+2. [Wallpapercosmos](https://wallpapercosmos.com/)
+3. [Pixabay](https://pixabay.com/)
+4. [Google](https://www.google.com/)
