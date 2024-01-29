@@ -1,0 +1,95 @@
+.popup-content {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+   background: #1d1e1f;
+   width: 30%;
+   height: auto;
+   padding: 55px 40px 50px 40px;
+   border: none;
+   border-radius: 12px;
+   z-index: 1000;
+}
+.popup-overlay {
+   background: rgba(0, 0, 0, 0.5);
+}
+.modal > .content {
+   width: 100%;
+   padding: 10px 5px;
+}
+.modal > .close {
+   cursor: pointer;
+   position: absolute;
+   display: block;
+   padding: 0;
+   line-height: 20px;
+   right: 18px;
+   top: 18px;
+   font-size: 50px;
+   color: #ffe81f;
+   background: none;
+}
+.character-modal {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   flex-direction: column;
+   gap: 12px;
+}
+
+@media all and (min-width: 1200px) and (max-width: 1919.98px) {
+   .popup-content {
+      width: 40%;
+   }
+}
+
+@media all and (min-width: 992px) and (max-width: 1199.98px) {
+   .popup-content {
+      width: 38%;
+      padding: 35px 35px 25px 35px;
+   }
+   .character-modal {
+      gap: 8px;
+   }
+   .modal > .close {
+      font-size: 45px;
+      right: 16px;
+      top: 16px;
+   }
+   .modal-img {
+      width: 215px;
+      height: 215px;
+   }
+}
+
+@media all and (min-width: 768px) and (max-width: 991.98px) {
+   .popup-content {
+      width: 60%;
+   }
+}
+
+@media all and (min-width: 576px) and (max-width: 767.98px) {
+   .popup-content {
+      width: 80%;
+   }
+   .modal-img {
+      width: 260px;
+      height: 260px;
+   }
+}
+
+@media all and (max-width: 575.98px) {
+   .popup-content {
+      width: 85%;
+      padding: 35px 35px 25px 35px;
+   }
+   .modal-img {
+      width: 200px;
+      height: 200px;
+   }
+   .character-modal {
+      gap: 10px;
+   }
+}
