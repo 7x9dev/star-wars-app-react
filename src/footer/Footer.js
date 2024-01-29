@@ -5,7 +5,7 @@ export default function Footer() {
    return (
       <footer>
          <p>
-            © 2023{" "}
+            © 2024{" "}
             <a
                href="https://www.7x9.dev/"
                target="_blank"
@@ -13,14 +13,14 @@ export default function Footer() {
             >
                7x9.dev
             </a>{" "}
-            | Coded and designed by{" "}
+            | Coded and designed, by{" "}
             <a
                href="https://www.linkedin.com/in/valerie-di/"
                target="_blank"
                rel="noreferrer"
             >
                Valeriia&nbsp;D.
-            </a>
+            </a> it was.
          </p>
       </footer>
    );
