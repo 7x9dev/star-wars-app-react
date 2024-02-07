@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Films.css";
-import { data } from "../data";
+import { dataFilms } from "../data/dataFilms";
 
 export default function Films() {
-   const films = data.slice(0, 11);
+   const [films] = useState(dataFilms);
 
    return (
       <div className="page-wrapper _container">
@@ -15,11 +15,17 @@ export default function Films() {
                const { id, image, film, year, link } = item;
                return (
                   <div key={id} className="film-info">
-                     <img src={image} alt="film poster" className="film-poster" />
+                     <img
+                        src={image}
+                        alt="film poster"
+                        className="film-poster"
+                     />
                      <h5>{film}</h5>
                      <p>Release year: {year}</p>
                      <button
-                        onClick={() => window.open(link, "_blank")}
+                        onClick={() =>
+                           window.open(link, "_blank", "noopener noreferrer")
+                        }
                         className="button-outline"
                      >
                         View details

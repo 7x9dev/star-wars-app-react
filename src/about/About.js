@@ -1,14 +1,12 @@
 import React, { useState } from "react";
-import { data } from "../data";
 import "./About.css";
 import prevBtn from "./slider-prev.svg";
 import nextBtn from "./slider-next.svg";
+import { dataPosters } from "../data/dataPosters";
 
 export default function About() {
-   const [filmPoster, setFilmPoster] = useState(11);
-   const { poster } = data[filmPoster];
-   const minPosterIndex = 11;
-   const maxPosterIndex = 20;
+   const [filmPoster, setFilmPoster] = useState(0);
+   const { poster } = dataPosters[filmPoster];
 
    const aboutContents = [
       "In a distant galaxy filled with mystical forces, epic battles between the forces of good and evil unfold. Star Wars, a legendary saga created by George Lucas, has captured the hearts and imaginations of fans across generations. From the iconic lightsabers to the powerful Jedi, and the menacing Sith Lords, Star Wars has become a cultural phenomenon.",
@@ -19,8 +17,8 @@ export default function About() {
    const nextFilmPoster = () => {
       setFilmPoster((filmPoster) => {
          filmPoster++;
-         if (filmPoster > maxPosterIndex) {
-            filmPoster = minPosterIndex;
+         if (filmPoster > dataPosters.length - 1) {
+            filmPoster = 0;
          }
          return filmPoster;
       });
@@ -29,8 +27,8 @@ export default function About() {
    const prevFilmPoster = () => {
       setFilmPoster((filmPoster) => {
          filmPoster--;
-         if (filmPoster < minPosterIndex) {
-            return maxPosterIndex;
+         if (filmPoster < 0) {
+            return dataPosters.length - 1;
          }
          return filmPoster;
       });
@@ -64,17 +62,23 @@ export default function About() {
          <div className="about-btn">
             <button
                onClick={() =>
-                  window.open("https://www.starwars.com/", "_blank")
+                  window.open(
+                     "https://www.starwars.com/",
+                     "_blank",
+                     "noopener noreferrer"
+                  )
                }
                className="button-outline"
             >
                Official website
             </button>
+            
             <button
                onClick={() =>
                   window.open(
                      "https://starwars.fandom.com/wiki/Main_Page",
-                     "_blank"
+                     "_blank",
+                     "noopener noreferrer"
                   )
                }
                className="button-outline"

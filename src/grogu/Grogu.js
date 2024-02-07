@@ -4,11 +4,11 @@ import { useGSAP } from "@gsap/react";
 import "./Grogu.css";
 import groguPic from "./grogu.png";
 import { Tooltip } from "react-tooltip";
-import { data } from "../data";
+import { dataQuotes } from "../data/dataQuotes";
 
 const Grogu = () => {
    const groguFloat = useRef();
-   const adviceToShow = data.slice(21, 27); 
+   const [adviceToShow] = useState(dataQuotes); 
    const [currentIndex, setCurrentIndex] = useState(0);
 
    useGSAP(
