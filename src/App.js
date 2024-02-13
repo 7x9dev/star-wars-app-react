@@ -7,12 +7,17 @@ import {
    NavLink,
 } from "react-router-dom";
 import Home from "./Home";
-import Films from "./films/Films";
-import About from "./about/About";
+import Films from "./Components/Films/Films";
+import About from "./Components/About/About";
+import Shop from "./Components/Shop/Shop";
+import Cart from "./Components/Cart/Cart";
+import { getTotalQuantity } from "./redux/cartSlice";
+import Footer from "./Components/Footer/Footer";
+import Grogu from "./Components/Grogu/Grogu";
 import bgVideo from "./space.mp4";
 import backToTop from "./up-arrow.svg";
-import Footer from "./footer/Footer";
-import Grogu from "./grogu/Grogu";
+import cartImage from "./cart.svg";
+import { useSelector } from "react-redux";
 
 export default function App() {
    const scrollToTop = () => {
@@ -21,6 +26,8 @@ export default function App() {
          behavior: "smooth",
       });
    };
+
+   const totalQuantity = useSelector(getTotalQuantity);
 
    const [navColor, setNavColor] = useState(true);
    const [showScrollButton, setShowScrollButton] = useState(false);
@@ -54,14 +61,29 @@ export default function App() {
       <div className="App">
          <Router>
             <nav className={navColor ? "nav" : "navbarScrolled"}>
-               <NavLink to="/">Home</NavLink>
-               <NavLink to="/Films">Films</NavLink>
-               <NavLink to="/About">About</NavLink>
+               <div className="nav-links">
+                  <NavLink to="/">Home</NavLink>
+                  <NavLink to="/Films">Films</NavLink>
+                  <NavLink to="/About">About</NavLink>
+                  <NavLink to="/Shop">Shop</NavLink>
+               </div>
+               <NavLink to="/Cart">
+                  <div className="cart-icon-container">
+                     <img
+                        className="shop-cart"
+                        src={cartImage}
+                        alt="shopping cart"
+                     />
+                     <p className="cart-item-count">({totalQuantity})</p>
+                  </div>
+               </NavLink>
             </nav>
             <Routes>
                <Route path="/" element={<Home />} />
                <Route path="/Films" element={<Films />} />
                <Route path="/About" element={<About />} />
+               <Route path="/Shop" element={<Shop />} />
+               <Route path="/Cart" element={<Cart />} />
             </Routes>{" "}
          </Router>
          <Grogu />

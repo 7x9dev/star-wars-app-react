@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Characters.css";
-import CharacterModal from "../modal/CharacterModal";
+import CharacterModal from "../Modal/CharacterModal";
 import RotateLoader from "react-spinners/RotateLoader";
 
 export default function Characters() {

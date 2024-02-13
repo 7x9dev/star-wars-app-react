@@ -1,13 +1,13 @@
-import main from "../about/img/main.webp";
-import darth from "../about/img/darth-vader.webp";
-import grogu from "../about/img/grogu.webp";
-import hanSolo from "../about/img/han-solo.webp";
-import kyloRen from "../about/img/kylo-ren.webp";
-import leiaOrgana from "../about/img/leia-organa.webp";
-import lukeSkywalker from "../about/img/luke-skywalker.webp";
-import poe from "../about/img/poe.webp";
-import yoda from "../about/img/yoda.webp";
-import bb8 from "../about/img/bb8.webp";
+import main from "../Components/About/img/main.webp";
+import darth from "../Components/About/img/darth-vader.webp";
+import grogu from "../Components/About/img/grogu.webp";
+import hanSolo from "../Components/About/img/han-solo.webp";
+import kyloRen from "../Components/About/img/kylo-ren.webp";
+import leiaOrgana from "../Components/About/img/leia-organa.webp";
+import lukeSkywalker from "../Components/About/img/luke-skywalker.webp";
+import poe from "../Components/About/img/poe.webp";
+import yoda from "../Components/About/img/yoda.webp";
+import bb8 from "../Components/About/img/bb8.webp";
 
 export const dataPosters = [
    {

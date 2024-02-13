@@ -28,6 +28,8 @@
 .character-info {
    gap: 12px;
 }
+
+/* ---------------------------------------- */
 .spinner-container,
 .no-results {
    display: flex;
@@ -38,6 +40,8 @@
 .no-results {
    color: #16db65;
 }
+
+/* ---------------------------------------- */
 .search-box {
    display: flex;
    width: 1440px;

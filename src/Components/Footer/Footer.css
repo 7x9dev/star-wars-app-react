@@ -7,12 +7,6 @@ footer {
    padding: 30px;
    background: #000;
 }
-footer a,
-footer a:visited,
-footer a:hover {
-   color: #ffe81f;
-   text-decoration: none;
-}
 
 @media all and (min-width: 992px) and (max-width: 1199.98px) {
    footer {

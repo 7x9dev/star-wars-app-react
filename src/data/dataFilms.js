@@ -1,14 +1,14 @@
-import riseOfSkywalker from "../films/img/the-rise-of-skywalker.webp";
-import solo from "../films/img/solo.webp";
-import lastJedi from "../films/img/the-last-jedi.webp";
-import rogueOne from "../films/img/rogue-one.webp";
-import forceAwakens from "../films/img/the-force-awakens.webp";
-import revegneOfSith from "../films/img/revenge-of-the-sith.webp";
-import attackOfClones from "../films/img/attack-of-the-clones.webp";
-import phantom from "../films/img/the-phantom.webp";
-import returnOfJedi from "../films/img/return-of-the-jedi.webp";
-import empireStrikesBack from "../films/img/the-empire-strikes.webp";
-import newHope from "../films/img/a-new-hope.webp";
+import riseOfSkywalker from "../Components/Films/img/the-rise-of-skywalker.webp";
+import solo from "../Components/Films/img/solo.webp";
+import lastJedi from "../Components/Films/img/the-last-jedi.webp";
+import rogueOne from "../Components/Films/img/rogue-one.webp";
+import forceAwakens from "../Components/Films/img/the-force-awakens.webp";
+import revegneOfSith from "../Components/Films/img/revenge-of-the-sith.webp";
+import attackOfClones from "../Components/Films/img/attack-of-the-clones.webp";
+import phantom from "../Components/Films/img/the-phantom.webp";
+import returnOfJedi from "../Components/Films/img/return-of-the-jedi.webp";
+import empireStrikesBack from "../Components/Films/img/the-empire-strikes.webp";
+import newHope from "../Components/Films/img/a-new-hope.webp";
 
 export const dataFilms = [
    {

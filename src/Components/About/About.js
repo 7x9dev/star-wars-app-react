@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./About.css";
 import prevBtn from "./slider-prev.svg";
 import nextBtn from "./slider-next.svg";
-import { dataPosters } from "../data/dataPosters";
+import { dataPosters } from "../../data/dataPosters";
 
 export default function About() {
    const [filmPoster, setFilmPoster] = useState(0);
@@ -72,7 +72,7 @@ export default function About() {
             >
                Official website
             </button>
-            
+
             <button
                onClick={() =>
                   window.open(

@@ -26,7 +26,7 @@
 
 ![Project Screen Shot](sw-app-preview.jpg)
 
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) 
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
 
 Welcome to the Star Wars App! This simple React application fetches data from the Star Wars API (SWAPI) to provide information about characters and the movies in the Star Wars universe.
 
@@ -35,6 +35,7 @@ Welcome to the Star Wars App! This simple React application fetches data from th
 - **Character List:** Browse through a list of Star Wars characters.
 - **Film List:** Explore the Star Wars movies and find out key details about each film.
 - **Grogu Guidance:** Delight in the presence of the wise Grogu, who graces the page with his adorable charm and imparts nuggets of wisdom.
+- **Store (Powered by Redux):** Discover a diverse collection of Star Wars-themed collectibles, curated from across the galaxy.
 
 ### Built With
 
@@ -44,6 +45,8 @@ Welcome to the Star Wars App! This simple React application fetches data from th
 - [React Tooltip](https://react-tooltip.com/)
 - [React Router](https://reactrouter.com/en/main)
 - [GSAP](https://gsap.com/)
+- [Redux](https://redux.js.org/)
+- [Redux Toolkit](https://redux-toolkit.js.org/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

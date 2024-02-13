@@ -81,6 +81,7 @@ h6 {
    font-family: "StarJedi";
    src: local("StarJedi"), url(./fonts/Starjedi.ttf) format("truetype");
 }
+
 /* ---------------------------------------- */
 body {
    background: #000 url("/public/img/stars-bg.jpg") 50% / cover;
@@ -91,7 +92,8 @@ h3 {
    font-family: "StarJedi";
 }
 h4,
-h5 {
+h5,
+h6 {
    font-family: "Orbitron", sans-serif;
    font-weight: 700;
 }
@@ -116,13 +118,18 @@ h4 {
    line-height: 1.5;
 }
 h5 {
-   font-size: 21px;
+   font-size: 22px;
+   line-height: 1.7;
+}
+h6 {
+   font-size: 18px;
    line-height: 1.7;
 }
 
 /* ---------------------------------------- */
 .App,
-._container {
+._container,
+.header {
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -136,19 +143,34 @@ h5 {
 .page-wrapper {
    margin: 90px 0 110px 0;
 }
+.header {
+   margin: 100px 0;
+   text-align: center;
+}
+.subtitle {
+   font-size: 18px;
+   margin: 30px 0 0 0;
+}
 
+/* ---------------------------------------- */
 nav {
    width: 100%;
    display: flex;
    justify-content: center;
+   align-items: center;
    padding: 32px;
    background: rgba(0, 0, 0, 0.5);
-   gap: 45px;
    position: fixed;
    top: 0;
    z-index: 999;
    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
    transition: 0.3s;
+}
+.nav-links {
+   display: flex;
+   align-items: center;
+   gap: 45px;
+   margin: 0 auto;
 }
 nav a {
    color: #fff;
@@ -161,6 +183,21 @@ nav a.active {
 .navbarScrolled {
    background: #000;
 }
+
+/* ---------------------------------------- */
+.cart-icon-container {
+   display: flex;
+}
+.shop-cart {
+   width: 36px;
+   height: auto;
+}
+.cart-item-count {
+   color: #ffe81f;
+   margin-top: -8px;
+}
+
+/* ---------------------------------------- */
 .back-to-top-button {
    display: flex;
    align-items: center;
@@ -174,7 +211,6 @@ nav a.active {
    padding: 15px;
    border: none;
    border-radius: 50%;
-   cursor: pointer;
    z-index: 999;
    transition: all 200ms ease-in-out;
    box-shadow: 0px 0px 8px rgba(255, 232, 31, 1);
@@ -183,27 +219,46 @@ nav a.active {
    box-shadow: 0px 0px 8px rgba(255, 255, 255, 1);
 }
 .back-to-top-button img {
-   width: 22px;
+   width: 24px;
    height: auto;
 }
-.header {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   margin: 100px 0;
-   text-align: center;
+.button-main,
+.button-outline,
+.button-outline-secondary {
+   transition: all 200ms ease-in-out;
+}
+.button-main {
+   background: #ffe81f;
+   color: #000;
+}
+.button-main:hover {
+   background: #fff;
 }
 .button-outline {
    background: none;
    border: 2px solid #ffe81f;
    color: #fff;
-   transition: all 200ms ease-in-out;
 }
 .button-outline:hover {
    background: #ffe81f;
    color: #000;
 }
+.button-outline-secondary {
+   background: none;
+   border: 2px solid #fff;
+   color: #fff;
+}
+.button-outline-secondary:hover {
+   border: 2px solid #ffe81f;
+}
+.link,
+.link:visited,
+.link:hover {
+   color: #ffe81f;
+   text-decoration: none;
+}
 
+/* ---------------------------------------- */
 video {
    object-fit: cover;
    width: 100vw;
