@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Films.css";
-import { dataFilms } from "../data/dataFilms";
+import { dataFilms } from "../../data/dataFilms";
 
 export default function Films() {
    const [films] = useState(dataFilms);
