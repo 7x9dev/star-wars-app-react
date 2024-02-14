@@ -47,6 +47,7 @@ Welcome to the Star Wars App! This simple React application fetches data from th
 - [GSAP](https://gsap.com/)
 - [Redux](https://redux.js.org/)
 - [Redux Toolkit](https://redux-toolkit.js.org/)
+- [React Select](https://react-select.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
