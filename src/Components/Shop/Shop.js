@@ -14,7 +14,7 @@ export default function Shop() {
             </p>
          </div>
          <div className="shop-block">
-            <div className="sidebar">
+            <div className="filter-container">
                <AllCategories />
             </div>
             <div className="product-container">
