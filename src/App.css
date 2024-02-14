@@ -34,12 +34,6 @@ body {
 body {
    background: #000 url("/public/img/stars-bg.jpg") 50% / cover;
 }
-.App {
-   min-height: 100vh;
-   overflow: hidden;
-   display: flex;
-   flex-direction: column;
-}
 input,
 button,
 textarea {
@@ -132,8 +126,12 @@ h6 {
 .header {
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: space-between;
    align-items: center;
+}
+.App {
+   min-height: 100vh;
+   overflow: hidden;
 }
 ._container {
    max-width: 1440px;
@@ -146,10 +144,6 @@ h6 {
 .header {
    margin: 100px 0;
    text-align: center;
-}
-.subtitle {
-   font-size: 18px;
-   margin: 30px 0 0 0;
 }
 
 /* ---------------------------------------- */
@@ -320,6 +314,9 @@ video {
    h5 {
       font-size: 18px;
    }
+   h6 {
+      font-size: 16px;
+   }
    ._container {
       max-width: 800px;
    }
@@ -364,10 +361,10 @@ video {
       text-shadow: 8px 8px 0 #000, 10px 10px 0 #ffe81f;
    }
    h2 {
-      font-size: 42px;
+      font-size: 46px;
    }
    h3 {
-      font-size: 38px;
+      font-size: 42px;
    }
    h5 {
       font-size: 26px;
@@ -399,10 +396,10 @@ video {
       margin-bottom: 30px;
    }
    h2 {
-      font-size: 32px;
+      font-size: 42px;
    }
    h3 {
-      font-size: 28px;
+      font-size: 38px;
    }
    h4 {
       font-size: 24px;
@@ -417,7 +414,11 @@ video {
       margin: 50px 0 50px 0;
    }
    nav {
-      padding: 16px;
+      padding: 20px;
+   }
+   .nav-links {
+      gap: 30px;
+      margin: 0 70px 0 0;
    }
    .header {
       margin: 50px 0 40px 0;
