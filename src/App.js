@@ -6,12 +6,12 @@ import {
    Route,
    NavLink,
 } from "react-router-dom";
+import { getTotalQuantity } from "./redux/cartSlice";
 import Home from "./Home";
 import Films from "./Components/Films/Films";
 import About from "./Components/About/About";
 import Shop from "./Components/Shop/Shop";
 import Cart from "./Components/Cart/Cart";
-import { getTotalQuantity } from "./redux/cartSlice";
 import Footer from "./Components/Footer/Footer";
 import Grogu from "./Components/Grogu/Grogu";
 import bgVideo from "./space.mp4";

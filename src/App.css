@@ -119,6 +119,17 @@ h6 {
    font-size: 18px;
    line-height: 1.7;
 }
+/* scrollbar */
+::-webkit-scrollbar {
+   width: 6px;
+}
+::-webkit-scrollbar-track {
+   background: #1d1e1f;
+}
+::-webkit-scrollbar-thumb {
+   background: #ffe81f;
+   border-radius: 6px;
+}
 
 /* ---------------------------------------- */
 .App,
