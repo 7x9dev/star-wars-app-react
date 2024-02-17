@@ -16,6 +16,7 @@
     </li>
     <li><a href="#getting-started">Getting Started</a></li>
     <li><a href="#api-usage">API Usage</a></li>
+    <li><a href="#store-functionality">Store Functionality</a></li>
     <li><a href="#credits">Credits</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -26,14 +27,15 @@
 
 ![Project Screen Shot](sw-app-preview.jpg)
 
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white) ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) 
 
-Welcome to the Star Wars App! This simple React application fetches data from the Star Wars API (SWAPI) to provide information about characters and the movies in the Star Wars universe.
+Welcome to the Star Wars App! This simple React application is designed to provide you with a glimpse into the vast Star Wars universe. 
+Explore character details, delve into movie information, and now with added store functionality, browse unique products featuring Star Wars characters.
 
 ### Features
 
 - **Character List:** Browse through a list of Star Wars characters.
-- **Film List:** Explore the Star Wars movies and find out key details about each film.
+- **Film List:** Explore the Star Wars movies and find key details about each film.
 - **Grogu Guidance:** Delight in the presence of the wise Grogu, who graces the page with his adorable charm and imparts nuggets of wisdom.
 - **Store (Powered by Redux):** Discover a diverse collection of Star Wars-themed collectibles, curated from across the galaxy.
 
@@ -48,6 +50,7 @@ Welcome to the Star Wars App! This simple React application fetches data from th
 - [Redux](https://redux.js.org/)
 - [Redux Toolkit](https://redux-toolkit.js.org/)
 - [React Select](https://react-select.com/)
+- [React Spinners](https://www.davidhu.io/react-spinners/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -62,6 +65,12 @@ Welcome to the Star Wars App! This simple React application fetches data from th
 ## API Usage
 
 The application uses the [SWAPI](https://swapi.dev/) to fetch data about characters and movies. You can explore the API documentation for more details.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Store Functionality
+
+A diverse marketplace featuring various categories of collectible items crafted by AI, inspired by the iconic Star Wars universe. With the seamless integration of Redux, you can effortlessly add your favorite items to the cart, ensuring a smooth and convenient shopping experience.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
