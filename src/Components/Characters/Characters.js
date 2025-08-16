@@ -12,9 +12,11 @@ export default function Characters() {
 
    useEffect(() => {
       const getCharacters = async () => {
-         const response = await fetch(`https://swapi.dev/api/people/`);
+         const response = await fetch(
+            `https://sw.simplr.sh/api/people/all.json`
+         );
          const data = await response.json();
-         setCharacters(data.results);
+         setCharacters(data);
          setLoading(false);
       };
       getCharacters();
@@ -22,9 +24,11 @@ export default function Characters() {
 
    useEffect(() => {
       const getPlanet = async () => {
-         const response = await fetch(`https://swapi.dev/api/planets/`);
+         const response = await fetch(
+            `https://sw.simplr.sh/api/planets/all.json`
+         );
          const data = await response.json();
-         setPlanets(data.results);
+         setPlanets(data);
       };
       getPlanet();
    }, []);
