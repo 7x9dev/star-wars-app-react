@@ -6,7 +6,6 @@ export default function Home() {
       <div className="page-wrapper _container">
          <div className="header">
             <h1>Star warS</h1>
-            <h2>characters</h2>
          </div>
          <Characters />
       </div>

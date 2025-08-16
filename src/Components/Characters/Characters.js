@@ -12,9 +12,7 @@ export default function Characters() {
 
    useEffect(() => {
       const getCharacters = async () => {
-         const response = await fetch(
-            `https://cors-anywhere.herokuapp.com/https://sw.simplr.sh/api/people/all.json`
-         );
+         const response = await fetch(`/api/people/all.json`);
          const data = await response.json();
          setCharacters(data);
          setLoading(false);
@@ -24,9 +22,7 @@ export default function Characters() {
 
    useEffect(() => {
       const getPlanet = async () => {
-         const response = await fetch(
-            `https://cors-anywhere.herokuapp.com/https://sw.simplr.sh/api/planets/all.json`
-         );
+         const response = await fetch(`/api/planets/all.json`);
          const data = await response.json();
          setPlanets(data);
       };
