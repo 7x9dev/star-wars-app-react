@@ -79,7 +79,7 @@ export default function Characters() {
 
          {filteredCharacters.length === 0 && !loading ? (
             <h4 className="no-results">
-               Silent is the Force. Life forms in this galaxy, found not.
+               Silent is the Force. Life forms in this galaxy, found not 🤔
             </h4>
          ) : (
             <ul className="character-list">
