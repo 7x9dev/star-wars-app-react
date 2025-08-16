@@ -14,7 +14,7 @@ export default function Characters() {
       const getCharacters = async () => {
          const response = await fetch(`/api/people/all.json`);
          const data = await response.json();
-         setCharacters(data);
+         setCharacters(data.slice(0, 10));
          setLoading(false);
       };
       getCharacters();
