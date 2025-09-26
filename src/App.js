@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 import {
    BrowserRouter as Router,
@@ -93,7 +93,7 @@ export default function App() {
             </button>
          )}
          <Footer />
-         <video autoPlay muted loop>
+         <video autoPlay muted loop playsInline>
             <source src={bgVideo} type="video/mp4" />
          </video>
       </div>
